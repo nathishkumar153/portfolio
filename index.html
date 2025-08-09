@@ -1,95 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nathish | Software Developer</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">Nathishkumar</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathish Kumar | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-text">
-        <h3>Hello,</h3>
-        <h1>I'm <span>Nathish</span></h1>
-        <h2>Software Developer</h2>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">Get a Project</a>
-          <a href="resume.pdf" class="btn outline" target="_blank">My Resume</a>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">NathishKumar</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h3>Hi, I'm</h3>
+      <h1><span>Nathish Kumar S</span></h1>
+      <h2>Full Stack Developer</h2>
+      <p>Passionate about building responsive, scalable web applications with modern technologies.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="resume.pdf" class="btn outline" target="_blank">Download Resume</a>
       </div>
-      <div class="hero-image">
-        <img src="IMG-20250210-WA0001.jpg" alt="Profile" />
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nathishkumar-s" target="_blank">LinkedIn</a>
+        <a href="https://github.com/YourGitHubUsername" target="_blank">GitHub</a>
       </div>
-    </section>
+    </div>
+    <div class="hero-image">
+      <img src="IMG-20250210-WA0001.jpg" alt="Profile" />
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Nathish, a passionate software developer who enjoys building responsive
-        and scalable web applications. I specialize in front-end development and
-        love to explore modern technologies.
-      </p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      A passionate and self-motivated Computer Science student with a strong interest in web development.
+      Skilled in HTML, CSS, JavaScript, and basic programming in Java and Python. Experienced in
+      building real-world projects using React.js and API integration. Looking forward to contributing
+      to innovative development teams and growing as a full-stack developer.
+    </p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>MongoDB</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React.js</span>
+      <span>Java (Basic)</span>
+      <span>Python (Basic)</span>
+      <span>SQL (Basic)</span>
+      <span>Git & GitHub</span>
+      <span>Postman</span>
+      <span>Figma</span>
+      <span>Canva</span>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal website built with HTML, CSS, and JS.</p>
-      </div>
-      <div class="project">
-        <h3>Todo App</h3>
-        <p>A task manager app built using React and local storage.</p>
-      </div>
-      <div class="project">
-        <h3>Weather App</h3>
-        <p>Displays live weather using a public API and JavaScript.</p>
-      </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Movie Watchlist App – React.js</h3>
+      <p>Designed and developed a movie watchlist app that allows users to search, view, and save favorite movies. Integrated third-party movie API and used localStorage for persistence.</p>
+    </div>
+    <div class="project-card">
+      <h3>Booksky – Online Bookstore</h3>
+      <p>Created using HTML, CSS, and JavaScript with features to write, add, delete, and search books, along with a simple cart system.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form action="#" method="post">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send Message</button>
-      </form>
-    </section>
+  <!-- Certifications Section -->
+  <section class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>React Development – Scaler Academy</li>
+      <li>Full Stack Development – NoviTech R&D Pvt. Ltd.</li>
+      <li>Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</li>
+    </ul>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2025 Nathishkumar. All Rights Reserved.</p>
-    </footer>
-  </body>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:nathishkumar2525@gmail.com">nathishkumar2525@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918248967574">+91 8248967574</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Nathish Kumar. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
 </html>
